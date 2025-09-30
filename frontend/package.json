@@ -1,0 +1,27 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@tanstack/react-query": "^5.90.2",
+    "@tanstack/react-query-devtools": "^5.90.2",
+    "@tanstack/react-router": "^1.132.26",
+    "@tanstack/react-router-devtools": "^1.132.26",
+    "@tanstack/router-plugin": "^1.132.26",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "redaxios": "^0.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.6.0",
+    "@types/react": "^19.1.16",
+    "@types/react-dom": "^19.1.9",
+    "@vitejs/plugin-react": "^5.0.4",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.7",
+    "vite-plugin-dts": "^4.5.4"
+  },
+  "keywords": ["react", "react-dom", "react-quary", "react-router", "redaxios", "typescript", "vite"],
+  "author": "",
+  "license": "MIT"
+}
