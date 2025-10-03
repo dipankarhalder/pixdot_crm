@@ -20,6 +20,7 @@ export default defineConfig({
     port: 4300,
     host: "localhost",
   },
+
   plugins: [
     dts({
       entryRoot: "src",

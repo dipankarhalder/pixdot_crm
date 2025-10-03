@@ -1,7 +1,14 @@
 {
-  "name": "frontend",
+  "name": "pixdot",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "crm-dashboard": "pnpm --filter @pixdot/dashboard",
+    "crm-auth": "pnpm --filter @pixdot/auth",
+    "crm-router": "pnpm --filter @pixdot/router",
+    "crm-app": "pnpm --filter @pixdot/app",
+    "dev": "pnpm crm-dashboard build && pnpm crm-router build && pnpm crm-auth build && pnpm crm-app dev"
+  },
   "dependencies": {
     "@tanstack/react-query": "^5.90.2",
     "@tanstack/react-query-devtools": "^5.90.2",
