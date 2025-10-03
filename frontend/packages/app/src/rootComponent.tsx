@@ -1,4 +1,4 @@
-import { Link, Outlet } from "@router-mono-react-query/router";
+import { Link, Outlet } from "@pixdot/router";
 import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
