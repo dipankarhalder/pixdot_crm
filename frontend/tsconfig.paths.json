@@ -2,6 +2,7 @@
   "compilerOptions": {
     "paths": {
       "@routes": ["./src/routes"],
+      "@pathroute/*": ["./src/config/*"],
       "@styles/*": ["./src/styles/*"],
       "@pages/*": ["./src/pages/*"]
     }
