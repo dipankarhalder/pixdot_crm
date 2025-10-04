@@ -28,10 +28,10 @@
     "ignoreDeprecations": "6.0",
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@hooks/*": ["src/hooks/*"],
-      "@lib/*": ["src/lib/*"]
+      "@routes": ["./src/routes"],
+      "@themes": ["./src/styles/theme"],
+      "@globals": ["./src/styles/globals"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "styles", "types", "styled.d.ts"]
 }
