@@ -2,7 +2,8 @@
   "compilerOptions": {
     "paths": {
       "@routes": ["./src/routes"],
-      "@styles/*": ["./src/styles/*"]
+      "@styles/*": ["./src/styles/*"],
+      "@pages/*": ["./src/pages/*"]
     }
   }
 }
