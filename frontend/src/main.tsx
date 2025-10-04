@@ -4,10 +4,11 @@ import { ThemeProvider } from 'styled-components';
 import { RouterProvider } from 'react-router-dom';
 
 import { routers } from '@routes';
-import { theme } from '@themes';
-import { GlobalDetails } from '@globals';
+import { theme } from '@styles/theme';
+import { GlobalDetails } from '@styles/globals';
 
 const root = document.getElementById('root');
+const errmsg = "Root element with ID 'root' not found in the document.";
 
 if (root) {
   const rootReturn = createRoot(root);
@@ -20,5 +21,5 @@ if (root) {
     </StrictMode>
   );
 } else {
-  throw new Error("The document does not contain an element with the ID 'root'.");
+  throw new Error(errmsg);
 }
