@@ -1,34 +1,39 @@
 {
-  "name": "pixdot",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "crm-dashboard": "pnpm --filter @pixdot/dashboard",
-    "crm-auth": "pnpm --filter @pixdot/auth",
-    "crm-router": "pnpm --filter @pixdot/router",
-    "crm-app": "pnpm --filter @pixdot/app",
-    "dev": "pnpm crm-dashboard build && pnpm crm-router build && pnpm crm-auth build && pnpm crm-app dev"
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "format": "prettier --write ."
   },
   "dependencies": {
-    "@tanstack/react-query": "^5.90.2",
-    "@tanstack/react-query-devtools": "^5.90.2",
-    "@tanstack/react-router": "^1.132.26",
-    "@tanstack/react-router-devtools": "^1.132.26",
-    "@tanstack/router-plugin": "^1.132.26",
+    "axios": "^1.12.2",
+    "moment": "^2.30.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "redaxios": "^0.5.1"
+    "react-router-dom": "^7.9.3",
+    "styled-components": "^6.1.19"
   },
   "devDependencies": {
+    "@eslint/js": "^9.36.0",
     "@types/node": "^24.6.0",
     "@types/react": "^19.1.16",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.4",
-    "typescript": "^5.9.2",
-    "vite": "^7.1.7",
-    "vite-plugin-dts": "^4.5.4"
-  },
-  "keywords": ["react", "react-dom", "react-quary", "react-router", "redaxios", "typescript", "vite"],
-  "author": "",
-  "license": "MIT"
+    "babel-plugin-react-compiler": "^19.1.0-rc.3",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.22",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.45.0",
+    "vite": "^7.1.7"
+  }
 }
