@@ -9,6 +9,10 @@ import { defineConfig, globalIgnores } from 'eslint/config';
 
 export default defineConfig([
   globalIgnores(['dist']),
+  js.configs.recommended,
+  tseslint.configs.recommended,
+  reactHooks.configs['recommended-latest'],
+  reactRefresh.configs.vite,
   {
     files: ['**/*.{ts,tsx}'],
     plugins: {
@@ -24,21 +28,17 @@ export default defineConfig([
     settings: {
       'import/resolver': {
         typescript: {
-          project: './tsconfig.app.json',
+          project: './tsconfig.path.json',
         },
       },
     },
-    extends: [
-      js.configs.recommended,
-      tseslint.configs.recommended,
-      reactHooks.configs['recommended-latest'],
-      reactRefresh.configs.vite,
-      'plugin:prettier/recommended',
-    ],
     languageOptions: {
       ecmaVersion: 2020,
       sourceType: 'module',
       globals: globals.browser,
+    },
+    linterOptions: {
+      reportUnusedDisableDirectives: true,
     },
   },
 ]);
