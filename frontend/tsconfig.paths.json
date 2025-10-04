@@ -4,7 +4,8 @@
       "@routes": ["./src/routes"],
       "@pathroute/*": ["./src/config/*"],
       "@styles/*": ["./src/styles/*"],
-      "@pages/*": ["./src/pages/*"]
+      "@pages/*": ["./src/pages/*"],
+      "@shared/*": ["./src/shared/*"]
     }
   }
 }
